@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrightPath — Build Better Habits</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --surface: #131a2f;
+        --surface-alt: #1a2340;
+        --text: #e8edff;
+        --muted: #b9c3e8;
+        --accent: #7c9cff;
+        --accent-strong: #5f85ff;
+        --success: #4cc9a6;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        color: var(--text);
+        background: linear-gradient(180deg, #0b1020 0%, #10162b 100%);
+        line-height: 1.6;
+      }
+
+      .container {
+        width: min(1100px, 92%);
+        margin: 0 auto;
+      }
+
+      .hero {
+        padding: 6rem 0 4rem;
+        text-align: center;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 0.35rem 0.75rem;
+        border-radius: 999px;
+        background: rgba(124, 156, 255, 0.2);
+        color: #d6e0ff;
+        font-size: 0.875rem;
+      }
+
+      h1 {
+        margin: 1rem 0 0.75rem;
+        font-size: clamp(2rem, 5vw, 3.4rem);
+        line-height: 1.15;
+      }
+
+      .hero p {
+        max-width: 700px;
+        margin: 0 auto 1.8rem;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .cta {
+        display: inline-block;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.8rem 1.2rem;
+        border-radius: 0.6rem;
+        transition: background 0.2s ease;
+      }
+
+      .cta:hover {
+        background: var(--accent-strong);
+      }
+
+      .blocks {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        margin: 2rem 0 5rem;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid #243053;
+        border-radius: 1rem;
+        padding: 1.3rem;
+      }
+
+      .card h3 {
+        margin-top: 0;
+      }
+
+      .card p {
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+
+      .highlight {
+        background: var(--surface-alt);
+        border-left: 4px solid var(--success);
+        padding: 1.2rem;
+        border-radius: 0.6rem;
+        margin: 0 0 4rem;
+      }
+
+      footer {
+        padding: 2rem 0 3rem;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <span class="badge">New habit tracking platform</span>
+        <h1>Build better routines with less friction</h1>
+        <p>
+          BrightPath helps individuals and teams turn goals into repeatable actions
+          through guided plans, smart reminders, and clear progress insights.
+        </p>
+        <a class="cta" href="#features">Start your free trial</a>
+      </section>
+
+      <section id="features" class="blocks">
+        <article class="card">
+          <h3>Plan in minutes</h3>
+          <p>
+            Choose from ready-to-use templates for fitness, focus, learning, and
+            wellness.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Stay consistent</h3>
+          <p>
+            Get friendly reminders, streaks, and checkpoints that keep motivation
+            high every week.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Measure real growth</h3>
+          <p>
+            Visual dashboards make it easy to see what is working and what needs
+            adjustment.
+          </p>
+        </article>
+      </section>
+
+      <section class="highlight">
+        <strong>Why teams choose BrightPath:</strong>
+        Create shared routines, track milestones, and celebrate wins together
+        without adding extra admin work.
+      </section>
+    </main>
+
+    <footer>
+      © 2026 BrightPath. Designed for consistency and momentum.
+    </footer>
+  </body>
+</html>
